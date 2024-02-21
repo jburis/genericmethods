@@ -8,19 +8,20 @@ public class Main {
 
         Integer[] intArray = {1, 2, 3, 4, 5};
         Double[] doubleArray = {1.5, 2.5, 3.5, 4.5, 5.5};
+        String[] sarray = {"first", "second", "thrird", "fourth"};
 
         GenericUtils.reverse(intArray);
-        GenericUtils.reverse(doubleArray);
+        GenericUtils.reverse(sarray);
 
-        System.out.println("Reversed Integer Array:");
+        System.out.println(" Integer Array:");
         for (Integer num : intArray) {
             System.out.print(num + " ");
         }
         System.out.println();
 
-        System.out.println("Reversed Double Array:");
-        for (Double num : doubleArray) {
-            System.out.print(num + " ");
+        System.out.println("Double Array:");
+        for (String elem : sarray) {
+            System.out.print(elem + " ");
         }
         System.out.println();
 

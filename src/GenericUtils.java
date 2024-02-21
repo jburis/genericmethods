@@ -3,22 +3,22 @@
  * @author julia
  * @version 2024-02-21
  */
-public class GenericUtils {
+public class GenericUtils{
     /**
      * Method reverse takes a generic array and reverses the elements+
      * @param array the generic array getting reversed
      * @param <T> the type variable T
      */
     public static <T> void reverse(T[] array){
-        int left = 0;
-        int right = array.length - 1;
+        int il = 0;
+        int ir = array.length - 1;
 
-        while (left < right) {
-            T elem = array[left];
-            array[left] = array[right];
-            array[right] = elem;
-            left++;
-            right--;
+        while (il < ir) {
+            T elem = array[il];
+            array[il] = array[ir];
+            array[ir] = elem;
+            il++;
+            ir--;
         }
     }
 
